@@ -1,7 +1,7 @@
 {
   "firstLayout": "",
   "gdVersion": {
-    "build": 274,
+    "build": 279,
     "major": 5,
     "minor": 6,
     "revision": 0
@@ -23,8 +23,8 @@
     "name": "Digital_Escape",
     "description": "",
     "author": "",
-    "windowWidth": 1280,
-    "windowHeight": 720,
+    "windowWidth": 1000,
+    "windowHeight": 520,
     "latestCompilationDirectory": "",
     "maxFPS": 60,
     "minFPS": 20,
@@ -131,6 +131,22 @@
         "name": "animate2.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "animate1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "animate1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/temporary.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "temporary",
+        "smoothed": false,
+        "userAdded": false
       }
     ]
   },
@@ -142,15 +158,15 @@
   "variables": [],
   "layouts": [
     {
-      "b": 255,
+      "b": 254,
       "disableInputWhenNotFocused": true,
       "mangledName": "Untitled_32scene",
       "name": "Untitled scene",
-      "r": 247,
+      "r": 144,
       "standardSortMethod": true,
       "stopSoundsOnStartup": true,
       "title": "",
-      "v": 249,
+      "v": 19,
       "uiSettings": {
         "grid": false,
         "gridType": "rectangular",
@@ -163,7 +179,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.6412939964692583,
+        "zoomFactor": 0.5839008526302967,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -174,18 +190,40 @@
         {
           "angle": 0,
           "customSize": true,
-          "depth": 1,
-          "height": 32,
+          "depth": 3,
+          "height": 94,
           "keepRatio": true,
           "layer": "",
           "name": "wizard",
           "persistentUuid": "cdb9d790-fb63-436a-af59-17d543738065",
-          "width": 32,
-          "x": 74,
-          "y": 648,
+          "width": 94,
+          "x": 65,
+          "y": 333,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 3,
+          "height": 98,
+          "keepRatio": true,
+          "layer": "",
+          "name": "tile",
+          "persistentUuid": "57280f37-a4dc-4e01-b9da-72b046030b2c",
+          "width": 3629,
+          "x": -2553,
+          "y": 423,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [
+            {
+              "name": "tilemap",
+              "value": "{\"tileWidth\":32,\"tileHeight\":32,\"dimX\":37,\"dimY\":1,\"layers\":[{\"id\":0,\"alpha\":1,\"tiles\":[[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]]}]}"
+            }
+          ],
           "initialVariables": []
         },
         {
@@ -195,19 +233,14 @@
           "height": 32,
           "keepRatio": true,
           "layer": "",
-          "name": "tile",
-          "persistentUuid": "57280f37-a4dc-4e01-b9da-72b046030b2c",
-          "width": 1312,
-          "x": -2,
-          "y": 687,
-          "zOrder": 2,
+          "name": "RoomGen",
+          "persistentUuid": "b7708553-560c-4695-924b-a9776469fd1b",
+          "width": 32,
+          "x": 995,
+          "y": -19,
+          "zOrder": 3,
           "numberProperties": [],
-          "stringProperties": [
-            {
-              "name": "tilemap",
-              "value": "{\"tileWidth\":32,\"tileHeight\":32,\"dimX\":41,\"dimY\":1,\"layers\":[{\"id\":0,\"alpha\":1,\"tiles\":[[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]]}]}"
-            }
-          ],
+          "stringProperties": [],
           "initialVariables": []
         }
       ],
@@ -223,9 +256,9 @@
           "effects": [],
           "behaviors": [
             {
+              "ignoreDefaultControls": true,
               "name": "PlatformerObject",
               "type": "PlatformBehavior::PlatformerObjectBehavior",
-              "ignoreDefaultControls": false,
               "acceleration": 1500,
               "canGoDownFromJumpthru": false,
               "canGrabPlatforms": false,
@@ -255,42 +288,6 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "nimate1.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 3,
-                            "y": 4
-                          },
-                          {
-                            "x": 30,
-                            "y": 4
-                          },
-                          {
-                            "x": 30,
-                            "y": 31
-                          },
-                          {
-                            "x": 3,
-                            "y": 31
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
                       "image": "animate2.png",
                       "points": [],
                       "originPoint": {
@@ -308,11 +305,47 @@
                         [
                           {
                             "x": 3,
-                            "y": 4
+                            "y": 3
                           },
                           {
                             "x": 30,
-                            "y": 4
+                            "y": 3
+                          },
+                          {
+                            "x": 30,
+                            "y": 31
+                          },
+                          {
+                            "x": 3,
+                            "y": 31
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "animate1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 3,
+                            "y": 3
+                          },
+                          {
+                            "x": 30,
+                            "y": 3
                           },
                           {
                             "x": 30,
@@ -369,24 +402,16 @@
         {
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
-          "name": "NewSprite",
-          "persistentUuid": "7b5a3a3a-9f92-4356-9c75-c6a43e810bf0",
+          "name": "RoomGen",
+          "persistentUuid": "0f812c8f-71ef-4a85-acf3-b828335e16cb",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
           "effects": [],
-          "behaviors": [
-            {
-              "name": "Platform",
-              "type": "PlatformBehavior::PlatformBehavior",
-              "canBeGrabbed": false,
-              "platformType": "NormalPlatform",
-              "yGrabOffset": 0
-            }
-          ],
+          "behaviors": [],
           "animations": [
             {
-              "name": "NewSprite",
+              "name": "temporary",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -396,7 +421,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "NewSprite",
+                      "image": "temporary",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -412,20 +437,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 10,
-                            "y": 28
+                            "x": 0,
+                            "y": 0
                           },
                           {
-                            "x": 44,
-                            "y": 28
+                            "x": 64,
+                            "y": 0
                           },
                           {
-                            "x": 44,
-                            "y": 51
+                            "x": 64,
+                            "y": 64
                           },
                           {
-                            "x": 10,
-                            "y": 51
+                            "x": 0,
+                            "y": 64
                           }
                         ]
                       ]
@@ -447,15 +472,192 @@
             "objectName": "tile"
           },
           {
-            "objectName": "NewSprite"
+            "objectName": "RoomGen"
           }
         ]
       },
       "events": [
         {
           "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SceneJustBegins"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "CenterCameraOnObject"
+              },
+              "parameters": [
+                "",
+                "wizard",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ZoomCamera"
+              },
+              "parameters": [
+                "",
+                "1",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCameraCenterY"
+              },
+              "parameters": [
+                "",
+                "=",
+                "wizard.Y()-98",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Camera offset"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
-          "actions": []
+          "actions": [
+            {
+              "type": {
+                "value": "SetCameraCenterX"
+              },
+              "parameters": [
+                "",
+                "=",
+                "wizard.X()+280",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Key inputs and run"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "PlatformBehavior::SimulateRightKey"
+              },
+              "parameters": [
+                "wizard",
+                "PlatformerObject"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"Space\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlatformBehavior::SimulateJumpKey"
+              },
+              "parameters": [
+                "wizard",
+                "PlatformerObject"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Check the players distance from Roomgen"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PosX"
+              },
+              "parameters": [
+                "wizard",
+                ">",
+                "RoomGen.X()-800"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+              },
+              "parameters": [
+                "",
+                "\"0_1\"",
+                "RoomGen.X()",
+                "RoomGen.Y()",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "RoomGen",
+                ""
+              ]
+            }
+          ]
         }
       ],
       "layers": [
@@ -557,11 +759,78 @@
         {
           "name": "Scale",
           "type": "ScalableCapability::ScalableBehavior"
+        },
+        {
+          "name": "TileMap",
+          "type": "TileMap::TileMapBehavior"
         }
       ]
     }
   ],
   "externalEvents": [],
   "eventsFunctionsExtensions": [],
-  "externalLayouts": []
+  "externalLayouts": [
+    {
+      "associatedLayout": "Untitled scene",
+      "name": "0_1",
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 3,
+          "height": 98,
+          "keepRatio": true,
+          "layer": "",
+          "name": "tile",
+          "persistentUuid": "c6c58ec9-b49c-4c0a-a2b7-f3b7a60d231a",
+          "width": 3629,
+          "x": -2553,
+          "y": 423,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [
+            {
+              "name": "tilemap",
+              "value": "{\"tileWidth\":32,\"tileHeight\":32,\"dimX\":37,\"dimY\":1,\"layers\":[{\"id\":0,\"alpha\":1,\"tiles\":[[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]]}]}"
+            }
+          ],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "RoomGen",
+          "persistentUuid": "b659068a-9c5f-4efe-90b7-7aa835c2baf5",
+          "width": 32,
+          "x": 995,
+          "y": 0,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "editionSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridDepth": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridOffsetZ": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.6550763565069021,
+        "windowMask": false,
+        "selectedLayer": "",
+        "gameEditorMode": "instances-editor"
+      }
+    }
+  ]
 }
