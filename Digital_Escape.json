@@ -1,7 +1,7 @@
 {
   "firstLayout": "",
   "gdVersion": {
-    "build": 280,
+    "build": 281,
     "major": 5,
     "minor": 6,
     "revision": 0
@@ -295,7 +295,7 @@
       {
         "file": "run3.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"run3.png\",\"extension\":\".png\"}",
         "name": "run3.png",
         "smoothed": false,
         "userAdded": false
@@ -303,7 +303,7 @@
       {
         "file": "run2.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"run2.png\",\"extension\":\".png\"}",
         "name": "run2.png",
         "smoothed": false,
         "userAdded": false
@@ -363,6 +363,38 @@
         "name": "Image1000x500(upscaled.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/run.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/run.png\"}",
+        "name": "run",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/run2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "run2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/run3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "run3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/run4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "run4",
+        "smoothed": false,
+        "userAdded": false
       }
     ]
   },
@@ -401,7 +433,13 @@
         "gameEditorMode": "instances-editor"
       },
       "objectsGroups": [],
-      "variables": [],
+      "variables": [
+        {
+          "name": "GameStarted",
+          "type": "number",
+          "value": 0
+        }
+      ],
       "instances": [
         {
           "angle": 0,
@@ -414,7 +452,7 @@
           "persistentUuid": "cdb9d790-fb63-436a-af59-17d543738065",
           "width": 94,
           "x": 65,
-          "y": 333,
+          "y": 301,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -506,9 +544,9 @@
           "effects": [],
           "behaviors": [
             {
-              "jumpSpeed": 750,
               "name": "PlatformerObject",
               "type": "PlatformBehavior::PlatformerObjectBehavior",
+              "jumpSpeed": 750,
               "ignoreDefaultControls": true,
               "acceleration": 1500,
               "canGoDownFromJumpthru": false,
@@ -618,7 +656,8 @@
               "directions": [
                 {
                   "looping": true,
-                  "timeBetweenFrames": 0.4,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.6,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
@@ -658,7 +697,115 @@
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "run2.png",
+                      "image": "run2",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 3,
+                            "y": 3
+                          },
+                          {
+                            "x": 30,
+                            "y": 3
+                          },
+                          {
+                            "x": 30,
+                            "y": 31
+                          },
+                          {
+                            "x": 3,
+                            "y": 31
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "run3",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 3,
+                            "y": 3
+                          },
+                          {
+                            "x": 30,
+                            "y": 3
+                          },
+                          {
+                            "x": 30,
+                            "y": 31
+                          },
+                          {
+                            "x": 3,
+                            "y": 31
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "run4",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 3,
+                            "y": 3
+                          },
+                          {
+                            "x": 30,
+                            "y": 3
+                          },
+                          {
+                            "x": 30,
+                            "y": 31
+                          },
+                          {
+                            "x": 3,
+                            "y": 31
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "run",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1325,6 +1472,16 @@
                 "",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "SetY"
+              },
+              "parameters": [
+                "wizard",
+                "=",
+                "-200"
+              ]
             }
           ]
         },
@@ -1481,11 +1638,66 @@
             "textG": 0,
             "textR": 0
           },
+          "comment": "Drop Manager"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PlatformBehavior::IsOnFloor"
+              },
+              "parameters": [
+                "wizard",
+                "PlatformerObject"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "GameStarted",
+                "=",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
           "comment": "Key inputs and run"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "GameStarted",
+                "=",
+                "1"
+              ]
+            }
+          ],
           "actions": [
             {
               "type": {
@@ -1622,6 +1834,11 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ],
       "layers": [
