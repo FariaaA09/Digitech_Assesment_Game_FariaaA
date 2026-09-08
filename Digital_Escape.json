@@ -436,6 +436,19 @@
       "variables": [
         {
           "name": "GameStarted",
+          "persistentUuid": "c36e4bc4-aa44-456d-a161-83969db92638",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "Random",
+          "persistentUuid": "83706988-65cd-470e-a1bc-dca33d4ee66f",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "CanDoubleJump",
+          "persistentUuid": "a1f4a8fb-50a9-4bdf-abf6-17a011716f36",
           "type": "number",
           "value": 0
         }
@@ -527,6 +540,23 @@
           "x": -1,
           "y": -14,
           "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 2,
+          "height": 65,
+          "keepRatio": true,
+          "layer": "",
+          "name": "crystal2",
+          "persistentUuid": "ecf64ce7-475a-43f1-a15f-ae51ee5a5cd4",
+          "width": 65,
+          "x": 857,
+          "y": 362,
+          "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1669,6 +1699,16 @@
                 "=",
                 "1"
               ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "CanDoubleJump",
+                "=",
+                "1"
+              ]
             }
           ]
         },
@@ -1736,6 +1776,56 @@
           ]
         },
         {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"Up\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlatformBehavior::SimulateJumpKey"
+              },
+              "parameters": [
+                "wizard",
+                "PlatformerObject"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"w\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlatformBehavior::SimulateJumpKey"
+              },
+              "parameters": [
+                "wizard",
+                "PlatformerObject"
+              ]
+            }
+          ]
+        },
+        {
           "type": "BuiltinCommonInstructions::Comment",
           "color": {
             "b": 109,
@@ -1745,9 +1835,10 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Check the players distance from Roomgen"
+          "comment": "Random Generation"
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -1764,23 +1855,128 @@
           "actions": [
             {
               "type": {
-                "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                "value": "SetNumberVariable"
               },
               "parameters": [
-                "",
-                "\"0_1\"",
-                "RoomGen.X()",
-                "RoomGen.Y()",
-                "0"
+                "Random",
+                "=",
+                "RandomInRange(1, 3)"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Random",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                  },
+                  "parameters": [
+                    "",
+                    "\"0_1\"",
+                    "RoomGen.X()",
+                    "RoomGen.Y()",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "RoomGen",
+                    ""
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "RoomGen",
-                ""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Random",
+                    "=",
+                    "2"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                  },
+                  "parameters": [
+                    "",
+                    "\"0_2\"",
+                    "RoomGen.X()",
+                    "RoomGen.Y()",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "RoomGen",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Random",
+                    "=",
+                    "3"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                  },
+                  "parameters": [
+                    "",
+                    "\"0_3\"",
+                    "RoomGen.X()",
+                    "RoomGen.Y()",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "RoomGen",
+                    ""
+                  ]
+                }
               ]
             }
           ]
@@ -1836,9 +2032,112 @@
           ]
         },
         {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Double Jump"
+        },
+        {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "PlatformBehavior::IsOnFloor"
+              },
+              "parameters": [
+                "wizard",
+                "PlatformerObject"
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "CanDoubleJump",
+                "=",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "KeyFromTextPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Space\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "KeyFromTextPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Up\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "KeyFromTextPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "\"w\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlatformBehavior::SetCanJump"
+              },
+              "parameters": [
+                "wizard",
+                "PlatformerObject"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlatformBehavior::SimulateJumpKey"
+              },
+              "parameters": [
+                "wizard",
+                "PlatformerObject"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "CanDoubleJump",
+                "=",
+                "0"
+              ]
+            }
+          ]
         }
       ],
       "layers": [
@@ -2091,7 +2390,216 @@
           "name": "crystal2",
           "persistentUuid": "03e0e8ec-3250-477a-9cba-0ec006a92135",
           "width": 65,
+          "x": 395,
+          "y": 362,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 2,
+          "height": 65,
+          "keepRatio": true,
+          "layer": "",
+          "name": "crystal2",
+          "persistentUuid": "648b957d-8b0c-4b40-8c5f-9dc704d0f51a",
+          "width": 65,
+          "x": 884,
+          "y": 362,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "editionSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridDepth": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridOffsetZ": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.6550763565069021,
+        "windowMask": false,
+        "selectedLayer": "",
+        "gameEditorMode": "instances-editor"
+      }
+    },
+    {
+      "associatedLayout": "Untitled scene",
+      "name": "0_2",
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 3,
+          "height": 98,
+          "keepRatio": true,
+          "layer": "",
+          "name": "tile",
+          "persistentUuid": "c6c58ec9-b49c-4c0a-a2b7-f3b7a60d231a",
+          "width": 3629,
+          "x": -2553,
+          "y": 423,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [
+            {
+              "name": "tilemap",
+              "value": "{\"tileWidth\":32,\"tileHeight\":32,\"dimX\":37,\"dimY\":1,\"layers\":[{\"id\":0,\"alpha\":1,\"tiles\":[[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]]}]}"
+            }
+          ],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "RoomGen",
+          "persistentUuid": "b659068a-9c5f-4efe-90b7-7aa835c2baf5",
+          "width": 32,
+          "x": 995,
+          "y": 0,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 2.280701754385965,
+          "height": 65,
+          "keepRatio": true,
+          "layer": "",
+          "name": "crystal2",
+          "persistentUuid": "03e0e8ec-3250-477a-9cba-0ec006a92135",
+          "width": 65,
+          "x": 238,
+          "y": 362,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 2,
+          "height": 65,
+          "keepRatio": true,
+          "layer": "",
+          "name": "crystal2",
+          "persistentUuid": "648b957d-8b0c-4b40-8c5f-9dc704d0f51a",
+          "width": 65,
+          "x": 451,
+          "y": 362,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "editionSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridDepth": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridOffsetZ": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.6550763565069021,
+        "windowMask": false,
+        "selectedLayer": "",
+        "gameEditorMode": "instances-editor"
+      }
+    },
+    {
+      "associatedLayout": "Untitled scene",
+      "name": "0_3",
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 3,
+          "height": 98,
+          "keepRatio": true,
+          "layer": "",
+          "name": "tile",
+          "persistentUuid": "c6c58ec9-b49c-4c0a-a2b7-f3b7a60d231a",
+          "width": 3629,
+          "x": -2553,
+          "y": 423,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [
+            {
+              "name": "tilemap",
+              "value": "{\"tileWidth\":32,\"tileHeight\":32,\"dimX\":37,\"dimY\":1,\"layers\":[{\"id\":0,\"alpha\":1,\"tiles\":[[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]]}]}"
+            }
+          ],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "RoomGen",
+          "persistentUuid": "b659068a-9c5f-4efe-90b7-7aa835c2baf5",
+          "width": 32,
+          "x": 995,
+          "y": 0,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 2.280701754385965,
+          "height": 65,
+          "keepRatio": true,
+          "layer": "",
+          "name": "crystal2",
+          "persistentUuid": "03e0e8ec-3250-477a-9cba-0ec006a92135",
+          "width": 65,
           "x": 404,
+          "y": 362,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 2,
+          "height": 65,
+          "keepRatio": true,
+          "layer": "",
+          "name": "crystal2",
+          "persistentUuid": "648b957d-8b0c-4b40-8c5f-9dc704d0f51a",
+          "width": 65,
+          "x": 498,
           "y": 362,
           "zOrder": 4,
           "numberProperties": [],
