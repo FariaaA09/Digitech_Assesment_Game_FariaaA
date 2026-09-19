@@ -395,6 +395,25 @@
         "name": "run4",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/Kenney Rocket.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "a7525df1cce09eecd517873e6ebe7294b7789f189d624770913570e40b1c6c92_Kenney Rocket.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Kenney Font Pack/a7525df1cce09eecd517873e6ebe7294b7789f189d624770913570e40b1c6c92_Kenney Rocket.ttf",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/NewSprite2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite2.png\"}",
+        "name": "NewSprite2",
+        "smoothed": false,
+        "userAdded": false
       }
     ]
   },
@@ -427,7 +446,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.34395744909980813,
+        "zoomFactor": 0.753107902864113,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -449,6 +468,12 @@
         {
           "name": "CanDoubleJump",
           "persistentUuid": "a1f4a8fb-50a9-4bdf-abf6-17a011716f36",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "Score",
+          "persistentUuid": "e070867d-bbd0-42bc-b612-21b16342fc9e",
           "type": "number",
           "value": 0
         }
@@ -557,6 +582,57 @@
           "x": 857,
           "y": 362,
           "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 58,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "HighScore",
+          "persistentUuid": "53847b39-b0d7-4ab5-b078-e844f6142c60",
+          "width": 255,
+          "x": 714,
+          "y": 57,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 434,
+          "keepRatio": true,
+          "layer": "",
+          "name": "ScoreSensor",
+          "persistentUuid": "62a2eba6-55b8-4738-a853-ef94e9a369de",
+          "width": 64,
+          "x": 413,
+          "y": -60,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 434,
+          "keepRatio": true,
+          "layer": "",
+          "name": "ScoreSensor",
+          "persistentUuid": "b4ae9f42-e279-43e3-b533-14045529a587",
+          "width": 64,
+          "x": 865,
+          "y": 2,
+          "zOrder": 7,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1420,15 +1496,109 @@
         },
         {
           "assetStoreId": "",
-          "height": 32,
-          "name": "NewTiledSprite",
-          "persistentUuid": "efb83969-cbe1-4e1f-af75-645f40d4e617",
-          "texture": "",
-          "type": "TiledSpriteObject::TiledSprite",
-          "width": 32,
+          "bold": true,
+          "italic": false,
+          "name": "HighScore",
+          "persistentUuid": "930ffbcb-abb5-4d95-9ddf-e0996835a209",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
           "variables": [],
           "effects": [],
-          "behaviors": []
+          "behaviors": [],
+          "string": "Text",
+          "font": "a7525df1cce09eecd517873e6ebe7294b7789f189d624770913570e40b1c6c92_Kenney Rocket.ttf",
+          "textAlignment": "center",
+          "characterSize": 50,
+          "color": {
+            "b": 180,
+            "g": 255,
+            "r": 0
+          },
+          "content": {
+            "bold": true,
+            "isOutlineEnabled": true,
+            "isShadowEnabled": true,
+            "italic": false,
+            "outlineColor": "0;0;0",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Text",
+            "font": "a7525df1cce09eecd517873e6ebe7294b7789f189d624770913570e40b1c6c92_Kenney Rocket.ttf",
+            "textAlignment": "center",
+            "verticalTextAlignment": "center",
+            "characterSize": 50,
+            "lineHeight": 0,
+            "color": "0;255;180"
+          }
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "ScoreSensor",
+          "persistentUuid": "fb785daa-5cfc-4bb2-b75f-c0c6ce23d1b9",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "NewSprite",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "NewSprite2",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 12
+                          },
+                          {
+                            "x": 39,
+                            "y": 12
+                          },
+                          {
+                            "x": 39,
+                            "y": 45
+                          },
+                          {
+                            "x": 7,
+                            "y": 45
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -1450,11 +1620,26 @@
             "objectName": "Background"
           },
           {
-            "objectName": "NewTiledSprite"
+            "objectName": "HighScore"
+          },
+          {
+            "objectName": "ScoreSensor"
           }
         ]
       },
       "events": [
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Begginning settings"
+        },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -1511,6 +1696,24 @@
                 "wizard",
                 "=",
                 "-200"
+              ]
+            },
+            {
+              "type": {
+                "value": "Hide"
+              },
+              "parameters": [
+                "ScoreSensor"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Score",
+                "=",
+                "0"
               ]
             }
           ]
@@ -1838,7 +2041,6 @@
           "comment": "Random Generation"
         },
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -2138,6 +2340,98 @@
               ]
             }
           ]
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Load Score System",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Link",
+              "include": {
+                "includeConfig": 0
+              },
+              "target": "HighScore"
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "wizard",
+                "ScoreSensor",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Score",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "ScoreSensor",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Score"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Visible"
+              },
+              "parameters": [
+                "ScoreSensor"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Hide"
+              },
+              "parameters": [
+                "ScoreSensor"
+              ]
+            }
+          ]
         }
       ],
       "layers": [
@@ -2259,6 +2553,60 @@
               }
             }
           ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "UI",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Ambient Hemisphere Light",
+              "doubleParameters": {
+                "elevation": 40,
+                "intensity": 0.33,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "groundColor": "127;127;127",
+                "skyColor": "255;255;255",
+                "top": "Z+"
+              },
+              "booleanParameters": {}
+            },
+            {
+              "effectType": "Scene3D::DirectionalLight",
+              "name": "3D Sun Light",
+              "doubleParameters": {
+                "distanceFromCamera": 1500,
+                "elevation": 40,
+                "frustumSize": 4000,
+                "intensity": 0.75,
+                "minimumShadowBias": 0,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "color": "255;255;255",
+                "shadowQuality": "medium",
+                "top": "Z+"
+              },
+              "booleanParameters": {
+                "isCastingShadow": true
+              }
+            }
+          ]
         }
       ],
       "behaviorsSharedData": [
@@ -2295,13 +2643,97 @@
           "type": "ScalableCapability::ScalableBehavior"
         },
         {
+          "name": "Text",
+          "type": "TextContainerCapability::TextContainerBehavior"
+        },
+        {
           "name": "TileMap",
           "type": "TileMap::TileMapBehavior"
         }
       ]
     }
   ],
-  "externalEvents": [],
+  "externalEvents": [
+    {
+      "associatedLayout": "Untitled scene",
+      "name": "HighScore",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Create  timer at start of game"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "GameStarted",
+                "=",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"GameScore\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Set Text To Timer"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "HighScore",
+                "Text",
+                "=",
+                "ToString(Variable(Score))"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "tests": [
     {
       "description": "Verifies crystal2 does not move vertically at scene start or while the camera scrolls.",
@@ -2413,6 +2845,40 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 367,
+          "keepRatio": true,
+          "layer": "",
+          "name": "ScoreSensor",
+          "persistentUuid": "00455e8c-42e8-4a77-bd80-2d93194cc625",
+          "width": 64,
+          "x": 405,
+          "y": -4,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 368,
+          "keepRatio": true,
+          "layer": "",
+          "name": "ScoreSensor",
+          "persistentUuid": "72bbe1e2-4560-47b5-a09b-606419d889c2",
+          "width": 64,
+          "x": 895,
+          "y": -2,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -2509,6 +2975,40 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 366,
+          "keepRatio": true,
+          "layer": "",
+          "name": "ScoreSensor",
+          "persistentUuid": "2f26f698-1b0c-4bfc-b8d6-3893315f7c21",
+          "width": 64,
+          "x": 248,
+          "y": 2,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 366,
+          "keepRatio": true,
+          "layer": "",
+          "name": "ScoreSensor",
+          "persistentUuid": "f0d549a4-ef6a-419a-8841-52a0847164c1",
+          "width": 64,
+          "x": 459,
+          "y": 3,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -2599,9 +3099,43 @@
           "name": "crystal2",
           "persistentUuid": "648b957d-8b0c-4b40-8c5f-9dc704d0f51a",
           "width": 65,
-          "x": 498,
+          "x": 524,
           "y": 362,
           "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 356,
+          "keepRatio": true,
+          "layer": "",
+          "name": "ScoreSensor",
+          "persistentUuid": "49650bbe-b530-49e7-9230-c898ab423329",
+          "width": 64,
+          "x": 406,
+          "y": 12,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 356,
+          "keepRatio": true,
+          "layer": "",
+          "name": "ScoreSensor",
+          "persistentUuid": "866efcef-c426-4e73-9be6-fa054b8d6fda",
+          "width": 64,
+          "x": 536,
+          "y": 15,
+          "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
