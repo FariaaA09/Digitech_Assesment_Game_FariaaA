@@ -438,6 +438,46 @@
         "name": "NewPanelSprite",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "5546427647918080.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "5546427647918080.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "5434554554384384.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "5434554554384384.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Jump_Sound.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Jump_Sound.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Hit_Sound.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Hit_Sound.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ]
   },
@@ -495,7 +535,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.753107902864113,
+        "zoomFactor": 0.7047759729496815,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -523,6 +563,109 @@
         {
           "name": "Score",
           "persistentUuid": "e070867d-bbd0-42bc-b612-21b16342fc9e",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "PatternArray",
+          "persistentUuid": "9fa863ab-b4dc-4d08-8bb2-e2232a10f430",
+          "type": "array",
+          "children": [
+            {
+              "persistentUuid": "7234c690-349e-461b-abc3-a6be50a0e2ab",
+              "type": "array",
+              "children": [
+                {
+                  "persistentUuid": "f45d91f5-d136-46f6-9907-d68c764fd33e",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "persistentUuid": "204a33e5-5929-4056-bedc-9cfb5e5cdd64",
+                  "type": "number",
+                  "value": 1
+                },
+                {
+                  "persistentUuid": "cb3bf030-d8bf-4feb-a3f8-cb7867f78d31",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "persistentUuid": "5fa9ef41-dc94-4ef5-b2bb-a929e59fa38f",
+                  "type": "number",
+                  "value": 1
+                }
+              ]
+            },
+            {
+              "persistentUuid": "df3ef86c-14ac-4f36-9e21-14a88a81ae3d",
+              "type": "array",
+              "children": [
+                {
+                  "persistentUuid": "6667ea85-429e-4a5d-b495-33226078d24b",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "persistentUuid": "dc4a2533-30bf-4cfc-83ea-1d6c2fe6351e",
+                  "type": "number",
+                  "value": 1
+                },
+                {
+                  "persistentUuid": "0cf26751-22ad-41e2-91bf-daffa087f82c",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "persistentUuid": "f872b7e2-893a-4945-a468-c67e90e0157b",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "persistentUuid": "cdae7958-809c-4ea7-842d-6e5f4fbf6eae",
+              "type": "array",
+              "children": [
+                {
+                  "persistentUuid": "ef1aced6-d448-4dfb-bec4-907ee7239a58",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "persistentUuid": "6b2aac76-2127-4008-a994-bab825ebbc98",
+                  "type": "number",
+                  "value": 1
+                },
+                {
+                  "persistentUuid": "97a5d897-d30d-4432-9286-e063dc36f219",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "persistentUuid": "3030a905-073f-4449-9dad-ad6d2cdcf169",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "SpawnX",
+          "persistentUuid": "a19ece5b-61ad-4e25-be9c-35638baf4a47",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "SelectedPattern",
+          "persistentUuid": "6cc5a4cb-7f62-4353-ac49-c1bb23b308d5",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "CellValue",
+          "persistentUuid": "f354c071-83b5-4a56-aff0-ef41beae8491",
           "type": "number",
           "value": 0
         }
@@ -587,23 +730,6 @@
         {
           "angle": 0,
           "customSize": true,
-          "depth": 2,
-          "height": 65,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Crystal",
-          "persistentUuid": "6dd5b409-6f3d-446b-b431-395c08f5953e",
-          "width": 65,
-          "x": 404,
-          "y": 362,
-          "zOrder": 4,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
           "depth": 1,
           "height": 507,
           "keepRatio": true,
@@ -660,10 +786,10 @@
           "keepRatio": true,
           "layer": "",
           "name": "ScoreSensor",
-          "persistentUuid": "62a2eba6-55b8-4738-a853-ef94e9a369de",
+          "persistentUuid": "b4ae9f42-e279-43e3-b533-14045529a587",
           "width": 64,
-          "x": 413,
-          "y": -60,
+          "x": 876,
+          "y": 23,
           "zOrder": 7,
           "numberProperties": [],
           "stringProperties": [],
@@ -673,30 +799,14 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 434,
-          "keepRatio": true,
-          "layer": "",
-          "name": "ScoreSensor",
-          "persistentUuid": "b4ae9f42-e279-43e3-b533-14045529a587",
-          "width": 64,
-          "x": 865,
-          "y": 2,
-          "zOrder": 7,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "height": 29,
           "keepRatio": true,
           "layer": "UI",
           "name": "Text_HighScore3",
           "persistentUuid": "ecbde470-861b-48ed-913f-c224ff7e763f",
-          "width": 0,
-          "x": 391,
-          "y": 273,
+          "width": 307,
+          "x": 372,
+          "y": 270,
           "zOrder": 8,
           "numberProperties": [],
           "stringProperties": [],
@@ -704,14 +814,15 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 29,
           "keepRatio": true,
           "layer": "UI",
           "name": "Text_HighScore2",
           "persistentUuid": "63674beb-9e96-4b85-85d7-c80307e3c516",
-          "width": 0,
-          "x": 391,
+          "width": 315,
+          "x": 371,
           "y": 238,
           "zOrder": 9,
           "numberProperties": [],
@@ -727,8 +838,8 @@
           "layer": "UI",
           "name": "Text_HighScore1",
           "persistentUuid": "b4d6f4c9-ad62-4a53-b924-4d72a015e3e1",
-          "width": 200,
-          "x": 398,
+          "width": 287,
+          "x": 379,
           "y": 205,
           "zOrder": 10,
           "numberProperties": [],
@@ -744,7 +855,7 @@
           "name": "Text_Restarter",
           "persistentUuid": "f601ba01-f658-42c5-9c60-bbd1bb218d55",
           "width": 0,
-          "x": 276,
+          "x": 225,
           "y": 308,
           "zOrder": 11,
           "numberProperties": [],
@@ -761,8 +872,8 @@
           "name": "ScoreBG",
           "persistentUuid": "2db08314-db41-4bec-810c-27b00907147d",
           "width": 632,
-          "x": 190,
-          "y": 107,
+          "x": 198,
+          "y": 104,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -770,14 +881,15 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 30,
           "keepRatio": true,
           "layer": "UI",
           "name": "Current_Score",
           "persistentUuid": "b59cf35a-b65c-43ec-8125-1474ff173846",
-          "width": 0,
-          "x": 397,
+          "width": 273,
+          "x": 382,
           "y": 174,
           "zOrder": 10,
           "numberProperties": [],
@@ -793,9 +905,43 @@
           "name": "Scores",
           "persistentUuid": "892d4d79-3bd9-4c2d-a6ec-e10b22eab4f9",
           "width": 0,
-          "x": 415,
+          "x": 422,
           "y": 126,
           "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 2,
+          "height": 65,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Crystal",
+          "persistentUuid": "cfcfe3a5-16e4-4d94-8184-bc91fe7478aa",
+          "width": 65,
+          "x": 367,
+          "y": 362,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 434,
+          "keepRatio": true,
+          "layer": "",
+          "name": "ScoreSensor",
+          "persistentUuid": "232a5217-75ec-4794-9627-a1cf1f555e65",
+          "width": 64,
+          "x": 366,
+          "y": 30,
+          "zOrder": 7,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -813,13 +959,13 @@
           "effects": [],
           "behaviors": [
             {
-              "maxFallingSpeed": 1100,
               "name": "PlatformerObject",
               "type": "PlatformBehavior::PlatformerObjectBehavior",
-              "gravity": 1300,
+              "gravity": 1200,
+              "ignoreDefaultControls": true,
+              "maxFallingSpeed": 900,
               "jumpSpeed": 720,
               "jumpSustainTime": 0.15,
-              "ignoreDefaultControls": true,
               "acceleration": 1500,
               "canGoDownFromJumpthru": false,
               "canGrabPlatforms": false,
@@ -1911,7 +2057,7 @@
           "behaviors": [],
           "string": "Last Game: 0",
           "font": "a7525df1cce09eecd517873e6ebe7294b7789f189d624770913570e40b1c6c92_Kenney Rocket.ttf",
-          "textAlignment": "left",
+          "textAlignment": "center",
           "characterSize": 20,
           "color": {
             "b": 180,
@@ -1934,7 +2080,7 @@
             "underlined": false,
             "text": "Last Game: 0",
             "font": "a7525df1cce09eecd517873e6ebe7294b7789f189d624770913570e40b1c6c92_Kenney Rocket.ttf",
-            "textAlignment": "left",
+            "textAlignment": "center",
             "verticalTextAlignment": "top",
             "characterSize": 20,
             "lineHeight": 0,
@@ -1955,7 +2101,7 @@
           "behaviors": [],
           "string": "2 Games Ago: 0",
           "font": "a7525df1cce09eecd517873e6ebe7294b7789f189d624770913570e40b1c6c92_Kenney Rocket.ttf",
-          "textAlignment": "left",
+          "textAlignment": "center",
           "characterSize": 20,
           "color": {
             "b": 180,
@@ -1978,7 +2124,7 @@
             "underlined": false,
             "text": "2 Games Ago: 0",
             "font": "a7525df1cce09eecd517873e6ebe7294b7789f189d624770913570e40b1c6c92_Kenney Rocket.ttf",
-            "textAlignment": "left",
+            "textAlignment": "center",
             "verticalTextAlignment": "top",
             "characterSize": 20,
             "lineHeight": 0,
@@ -1999,7 +2145,7 @@
           "behaviors": [],
           "string": "3 Games Ago: 0",
           "font": "a7525df1cce09eecd517873e6ebe7294b7789f189d624770913570e40b1c6c92_Kenney Rocket.ttf",
-          "textAlignment": "left",
+          "textAlignment": "center",
           "characterSize": 20,
           "color": {
             "b": 180,
@@ -2022,7 +2168,7 @@
             "underlined": false,
             "text": "3 Games Ago: 0",
             "font": "a7525df1cce09eecd517873e6ebe7294b7789f189d624770913570e40b1c6c92_Kenney Rocket.ttf",
-            "textAlignment": "left",
+            "textAlignment": "center",
             "verticalTextAlignment": "top",
             "characterSize": 20,
             "lineHeight": 0,
@@ -2041,10 +2187,10 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "CLICK TO PLAY AGAIN",
+          "string": "CLICK ANY KEY TO PLAY AGAIN",
           "font": "a7525df1cce09eecd517873e6ebe7294b7789f189d624770913570e40b1c6c92_Kenney Rocket.ttf",
-          "textAlignment": "left",
-          "characterSize": 30,
+          "textAlignment": "center",
+          "characterSize": 25,
           "color": {
             "b": 180,
             "g": 255,
@@ -2064,11 +2210,11 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "CLICK TO PLAY AGAIN",
+            "text": "CLICK ANY KEY TO PLAY AGAIN",
             "font": "a7525df1cce09eecd517873e6ebe7294b7789f189d624770913570e40b1c6c92_Kenney Rocket.ttf",
-            "textAlignment": "left",
+            "textAlignment": "center",
             "verticalTextAlignment": "top",
-            "characterSize": 30,
+            "characterSize": 25,
             "lineHeight": 0,
             "color": "0;255;180"
           }
@@ -2087,7 +2233,26 @@
           "type": "PanelSpriteObject::PanelSprite",
           "width": 32,
           "variables": [],
-          "effects": [],
+          "effects": [
+            {
+              "effectType": "DropShadow",
+              "name": "Shadow",
+              "doubleParameters": {
+                "alpha": 1,
+                "blur": 2,
+                "distance": 6,
+                "padding": 0,
+                "quality": 3,
+                "rotation": 45
+              },
+              "stringParameters": {
+                "color": "0;0;0"
+              },
+              "booleanParameters": {
+                "shadowOnly": false
+              }
+            }
+          ],
           "behaviors": []
         },
         {
@@ -2104,7 +2269,7 @@
           "behaviors": [],
           "string": "This Round: 0\n",
           "font": "a7525df1cce09eecd517873e6ebe7294b7789f189d624770913570e40b1c6c92_Kenney Rocket.ttf",
-          "textAlignment": "left",
+          "textAlignment": "center",
           "characterSize": 20,
           "color": {
             "b": 180,
@@ -2127,7 +2292,7 @@
             "underlined": false,
             "text": "This Round: 0\n",
             "font": "a7525df1cce09eecd517873e6ebe7294b7789f189d624770913570e40b1c6c92_Kenney Rocket.ttf",
-            "textAlignment": "left",
+            "textAlignment": "center",
             "verticalTextAlignment": "top",
             "characterSize": 20,
             "lineHeight": 0,
@@ -2148,7 +2313,7 @@
           "behaviors": [],
           "string": "Scores",
           "font": "a7525df1cce09eecd517873e6ebe7294b7789f189d624770913570e40b1c6c92_Kenney Rocket.ttf",
-          "textAlignment": "left",
+          "textAlignment": "center",
           "characterSize": 30,
           "color": {
             "b": 180,
@@ -2171,7 +2336,7 @@
             "underlined": false,
             "text": "Scores",
             "font": "a7525df1cce09eecd517873e6ebe7294b7789f189d624770913570e40b1c6c92_Kenney Rocket.ttf",
-            "textAlignment": "left",
+            "textAlignment": "center",
             "verticalTextAlignment": "top",
             "characterSize": 30,
             "lineHeight": 0,
@@ -2233,6 +2398,18 @@
         ]
       },
       "events": [
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Hide and Load all highscores"
+        },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -2457,6 +2634,56 @@
                 "=",
                 "0"
               ]
+            },
+            {
+              "type": {
+                "value": "StopMusicChannel"
+              },
+              "parameters": [
+                "",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundOnChannel"
+              },
+              "parameters": [
+                "",
+                "5434554554384384.wav",
+                "1",
+                "yes",
+                "70",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeTimeScale"
+              },
+              "parameters": [
+                "",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "GameStarted",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"ChunkTimer\""
+              ]
             }
           ]
         },
@@ -2560,6 +2787,12 @@
                 "wizard",
                 "PlatformerObject"
               ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
             }
           ],
           "actions": [
@@ -2572,6 +2805,18 @@
                 "Animation",
                 "=",
                 "\"Jump\""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "Jump_Sound.wav",
+                "",
+                "60",
+                "1"
               ]
             }
           ]
@@ -2667,7 +2912,7 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Key inputs and run"
+          "comment": "Inputs and run"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -2700,6 +2945,16 @@
           "conditions": [
             {
               "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "GameStarted",
+                "=",
+                "1"
+              ]
+            },
+            {
+              "type": {
                 "value": "KeyFromTextPressed"
               },
               "parameters": [
@@ -2725,6 +2980,16 @@
           "conditions": [
             {
               "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "GameStarted",
+                "=",
+                "1"
+              ]
+            },
+            {
+              "type": {
                 "value": "KeyFromTextPressed"
               },
               "parameters": [
@@ -2748,6 +3013,16 @@
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "GameStarted",
+                "=",
+                "1"
+              ]
+            },
             {
               "type": {
                 "value": "KeyFromTextPressed"
@@ -2780,7 +3055,7 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Wizard Speed"
+          "comment": "Wizard Speed And Sound Increase"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -2805,7 +3080,18 @@
                 "wizard",
                 "PlatformerObject",
                 "=",
-                "300 +(floor(Variable(Score) / 5) * 50)"
+                "300 + (Variable(Score) * 8)"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetSoundChannelPitch"
+              },
+              "parameters": [
+                "",
+                "1",
+                "=",
+                "1+(Variable(Score)*0.003)"
               ]
             }
           ]
@@ -2820,7 +3106,7 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Random Generation"
+          "comment": "Random Obstacle Generation"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -3144,9 +3430,33 @@
                 "",
                 "0"
               ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "Hit_Sound.wav",
+                "",
+                "70",
+                "1"
+              ]
             }
           ],
           "events": [
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Show previous scores"
+            },
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [],
@@ -3347,9 +3657,33 @@
                 "",
                 "0"
               ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "Hit_Sound.wav",
+                "",
+                "70",
+                "1"
+              ]
             }
           ],
           "events": [
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Show previous scores"
+            },
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [],
@@ -3570,6 +3904,18 @@
           "parameters": []
         },
         {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Add Points to score"
+        },
+        {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -3617,7 +3963,7 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Score"
+          "comment": "Hide Score"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -3675,6 +4021,14 @@
                 "",
                 "\"Left\""
               ]
+            },
+            {
+              "type": {
+                "value": "Visible"
+              },
+              "parameters": [
+                "Text_Restarter"
+              ]
             }
           ],
           "actions": [
@@ -3685,6 +4039,255 @@
               "parameters": [
                 "",
                 "\"Untitled scene\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "GameStarted",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "AnyKeyPressed"
+              },
+              "parameters": [
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Visible"
+              },
+              "parameters": [
+                "Text_Restarter"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Untitled scene\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Array"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "GameStarted",
+                "=",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "",
+                "\"ChunkTimer\"",
+                ">",
+                "2"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"ChunkTimer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "SelectedPattern",
+                "=",
+                "RandomInRange(0, 2)"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "SpawnX",
+                "=",
+                "wizard.X() + 800\n"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::ForEachChildVariable",
+              "iterableVariableName": "PatternArray[SelectedPattern]",
+              "valueIteratorVariableName": "CellValue",
+              "keyIteratorVariableName": "LoopIndex",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "CellValue",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Crystal",
+                    "Variable(SpawnX) + (ToNumber(VariableString(LoopIndex)) * 220)",
+                    "362",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetZOrder"
+                  },
+                  "parameters": [
+                    "Crystal",
+                    "=",
+                    "10"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ScalableCapability::ScalableBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Crystal",
+                    "Scale",
+                    "=",
+                    "2.03"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "ScoreSensor",
+                    "Variable(SpawnX) + (ToNumber(VariableString(LoopIndex))*220)",
+                    "180",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Hide"
+                  },
+                  "parameters": [
+                    "ScoreSensor"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Crystal",
+                "Laser",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Crystal",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "ScoreSensor",
+                "Laser",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "ScoreSensor",
                 ""
               ]
             }
@@ -4098,74 +4701,6 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 2.280701754385965,
-          "height": 65,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Crystal",
-          "persistentUuid": "03e0e8ec-3250-477a-9cba-0ec006a92135",
-          "width": 65,
-          "x": 395,
-          "y": 362,
-          "zOrder": 4,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 2,
-          "height": 65,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Crystal",
-          "persistentUuid": "648b957d-8b0c-4b40-8c5f-9dc704d0f51a",
-          "width": 65,
-          "x": 793,
-          "y": 362,
-          "zOrder": 4,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 367,
-          "keepRatio": true,
-          "layer": "",
-          "name": "ScoreSensor",
-          "persistentUuid": "00455e8c-42e8-4a77-bd80-2d93194cc625",
-          "width": 64,
-          "x": 405,
-          "y": -4,
-          "zOrder": 5,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 368,
-          "keepRatio": true,
-          "layer": "",
-          "name": "ScoreSensor",
-          "persistentUuid": "72bbe1e2-4560-47b5-a09b-606419d889c2",
-          "width": 64,
-          "x": 799,
-          "y": -1,
-          "zOrder": 6,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -4228,74 +4763,6 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 2.280701754385965,
-          "height": 65,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Crystal",
-          "persistentUuid": "03e0e8ec-3250-477a-9cba-0ec006a92135",
-          "width": 65,
-          "x": 238,
-          "y": 362,
-          "zOrder": 4,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 2,
-          "height": 65,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Crystal",
-          "persistentUuid": "648b957d-8b0c-4b40-8c5f-9dc704d0f51a",
-          "width": 65,
-          "x": 474,
-          "y": 362,
-          "zOrder": 4,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 366,
-          "keepRatio": true,
-          "layer": "",
-          "name": "ScoreSensor",
-          "persistentUuid": "2f26f698-1b0c-4bfc-b8d6-3893315f7c21",
-          "width": 64,
-          "x": 248,
-          "y": 2,
-          "zOrder": 5,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 366,
-          "keepRatio": true,
-          "layer": "",
-          "name": "ScoreSensor",
-          "persistentUuid": "f0d549a4-ef6a-419a-8841-52a0847164c1",
-          "width": 64,
-          "x": 467,
-          "y": 3,
-          "zOrder": 5,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
         }
       ],
       "editionSettings": {
@@ -4355,74 +4822,6 @@
           "x": 995,
           "y": 0,
           "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 2.280701754385965,
-          "height": 65,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Crystal",
-          "persistentUuid": "03e0e8ec-3250-477a-9cba-0ec006a92135",
-          "width": 65,
-          "x": 404,
-          "y": 362,
-          "zOrder": 4,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 2,
-          "height": 65,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Crystal",
-          "persistentUuid": "648b957d-8b0c-4b40-8c5f-9dc704d0f51a",
-          "width": 65,
-          "x": 502,
-          "y": 362,
-          "zOrder": 4,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 356,
-          "keepRatio": true,
-          "layer": "",
-          "name": "ScoreSensor",
-          "persistentUuid": "49650bbe-b530-49e7-9230-c898ab423329",
-          "width": 64,
-          "x": 406,
-          "y": 12,
-          "zOrder": 5,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 356,
-          "keepRatio": true,
-          "layer": "",
-          "name": "ScoreSensor",
-          "persistentUuid": "866efcef-c426-4e73-9be6-fa054b8d6fda",
-          "width": 64,
-          "x": 498,
-          "y": 23,
-          "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -4632,40 +5031,6 @@
           "x": 703,
           "y": 170,
           "zOrder": 5,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 65,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Crystal",
-          "persistentUuid": "7d952b0f-a4c9-4e1b-a0e3-2981a1496149",
-          "width": 65,
-          "x": 110,
-          "y": 362,
-          "zOrder": 6,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 348,
-          "keepRatio": true,
-          "layer": "",
-          "name": "ScoreSensor",
-          "persistentUuid": "5a62cb0b-1f09-46de-aa0c-0860be3706c0",
-          "width": 64,
-          "x": 123,
-          "y": 3,
-          "zOrder": 7,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
