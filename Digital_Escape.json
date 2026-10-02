@@ -614,12 +614,12 @@
                 {
                   "persistentUuid": "0cf26751-22ad-41e2-91bf-daffa087f82c",
                   "type": "number",
-                  "value": 1
+                  "value": 0
                 },
                 {
                   "persistentUuid": "f872b7e2-893a-4945-a468-c67e90e0157b",
                   "type": "number",
-                  "value": 0
+                  "value": 1
                 }
               ]
             },
@@ -638,12 +638,12 @@
                   "value": 1
                 },
                 {
-                  "persistentUuid": "97a5d897-d30d-4432-9286-e063dc36f219",
+                  "persistentUuid": "8cb3d13a-9b62-4af4-8aeb-60c2b2061304",
                   "type": "number",
                   "value": 0
                 },
                 {
-                  "persistentUuid": "3030a905-073f-4449-9dad-ad6d2cdcf169",
+                  "persistentUuid": "97a5d897-d30d-4432-9286-e063dc36f219",
                   "type": "number",
                   "value": 0
                 }
@@ -656,10 +656,10 @@
                 {
                   "persistentUuid": "47f7c081-2b64-46a9-9094-737029745eb5",
                   "type": "number",
-                  "value": 1
+                  "value": 0
                 },
                 {
-                  "persistentUuid": "8cb3d13a-9b62-4af4-8aeb-60c2b2061304",
+                  "persistentUuid": "3030a905-073f-4449-9dad-ad6d2cdcf169",
                   "type": "number",
                   "value": 0
                 },
@@ -5148,57 +5148,6 @@
           "x": 995,
           "y": 0,
           "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 158,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Laser",
-          "persistentUuid": "9ba3e24d-8b26-4d3f-87e0-4d6bc8d9bfaf",
-          "width": 406,
-          "x": 219,
-          "y": 296,
-          "zOrder": 4,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 105,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Base",
-          "persistentUuid": "0697f063-c002-4e94-9352-a11ff8744276",
-          "width": 129,
-          "x": 368,
-          "y": 139,
-          "zOrder": 5,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 405,
-          "keepRatio": true,
-          "layer": "",
-          "name": "ScoreSensor",
-          "persistentUuid": "a653f7e6-4555-4879-ae32-b5b45fe1c14b",
-          "width": 64,
-          "x": 402,
-          "y": -95,
-          "zOrder": 6,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
