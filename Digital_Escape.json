@@ -614,7 +614,7 @@
                 {
                   "persistentUuid": "0cf26751-22ad-41e2-91bf-daffa087f82c",
                   "type": "number",
-                  "value": 0
+                  "value": 1
                 },
                 {
                   "persistentUuid": "f872b7e2-893a-4945-a468-c67e90e0157b",
@@ -648,6 +648,58 @@
                   "value": 0
                 }
               ]
+            },
+            {
+              "persistentUuid": "8be947b7-4958-48de-b5b2-7c7f345beff4",
+              "type": "array",
+              "children": [
+                {
+                  "persistentUuid": "47f7c081-2b64-46a9-9094-737029745eb5",
+                  "type": "number",
+                  "value": 1
+                },
+                {
+                  "persistentUuid": "8cb3d13a-9b62-4af4-8aeb-60c2b2061304",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "persistentUuid": "fcb279e4-bd9c-45f4-80d5-69e40160093e",
+                  "type": "number",
+                  "value": 1
+                },
+                {
+                  "persistentUuid": "15b7543b-a1e0-4820-92a6-49b3f6eb107d",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "persistentUuid": "d805c9b9-ac1d-401c-bfe7-fee2a36bcd9c",
+              "type": "array",
+              "children": [
+                {
+                  "persistentUuid": "d6994b8d-4fd7-4e80-83bb-58f1c6faae3b",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "persistentUuid": "f5506d81-1dd2-4da3-9fcb-f6604dd114c8",
+                  "type": "number",
+                  "value": 1
+                },
+                {
+                  "persistentUuid": "1a6e3936-de42-4cc8-9bcb-02d373bdb0d1",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "persistentUuid": "fc49ab3a-dc43-40f5-805a-11becf89729f",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
             }
           ]
         },
@@ -668,6 +720,12 @@
           "persistentUuid": "f354c071-83b5-4a56-aff0-ef41beae8491",
           "type": "number",
           "value": 0
+        },
+        {
+          "name": "SpawnInterval",
+          "persistentUuid": "c0903843-6de0-48d4-8e77-029736e6c3a3",
+          "type": "number",
+          "value": 2
         }
       ],
       "instances": [
@@ -805,8 +863,8 @@
           "name": "Text_HighScore3",
           "persistentUuid": "ecbde470-861b-48ed-913f-c224ff7e763f",
           "width": 307,
-          "x": 372,
-          "y": 270,
+          "x": 359,
+          "y": 258,
           "zOrder": 8,
           "numberProperties": [],
           "stringProperties": [],
@@ -823,7 +881,7 @@
           "persistentUuid": "63674beb-9e96-4b85-85d7-c80307e3c516",
           "width": 315,
           "x": 371,
-          "y": 238,
+          "y": 222,
           "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
@@ -840,7 +898,7 @@
           "persistentUuid": "b4d6f4c9-ad62-4a53-b924-4d72a015e3e1",
           "width": 287,
           "x": 379,
-          "y": 205,
+          "y": 193,
           "zOrder": 10,
           "numberProperties": [],
           "stringProperties": [],
@@ -856,7 +914,7 @@
           "persistentUuid": "f601ba01-f658-42c5-9c60-bbd1bb218d55",
           "width": 0,
           "x": 225,
-          "y": 308,
+          "y": 289,
           "zOrder": 11,
           "numberProperties": [],
           "stringProperties": [],
@@ -890,7 +948,7 @@
           "persistentUuid": "b59cf35a-b65c-43ec-8125-1474ff173846",
           "width": 273,
           "x": 382,
-          "y": 174,
+          "y": 163,
           "zOrder": 10,
           "numberProperties": [],
           "stringProperties": [],
@@ -906,7 +964,7 @@
           "persistentUuid": "892d4d79-3bd9-4c2d-a6ec-e10b22eab4f9",
           "width": 0,
           "x": 422,
-          "y": 126,
+          "y": 116,
           "zOrder": 13,
           "numberProperties": [],
           "stringProperties": [],
@@ -942,6 +1000,22 @@
           "x": 366,
           "y": 30,
           "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "Demo",
+          "persistentUuid": "aba222c8-d284-408e-ae0b-71a657fec7b8",
+          "width": 0,
+          "x": 236,
+          "y": 340,
+          "zOrder": 50,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2143,7 +2217,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "3 Games Ago: 0",
+          "string": "3 games ago:",
           "font": "a7525df1cce09eecd517873e6ebe7294b7789f189d624770913570e40b1c6c92_Kenney Rocket.ttf",
           "textAlignment": "center",
           "characterSize": 20,
@@ -2166,7 +2240,7 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "3 Games Ago: 0",
+            "text": "3 games ago:",
             "font": "a7525df1cce09eecd517873e6ebe7294b7789f189d624770913570e40b1c6c92_Kenney Rocket.ttf",
             "textAlignment": "center",
             "verticalTextAlignment": "top",
@@ -2342,6 +2416,50 @@
             "lineHeight": 0,
             "color": "0;255;180"
           }
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": true,
+          "name": "Demo",
+          "persistentUuid": "0df83167-46c4-402e-9edf-5a31d0083823",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "You can jump higher by pressing jump twice",
+          "font": "a7525df1cce09eecd517873e6ebe7294b7789f189d624770913570e40b1c6c92_Kenney Rocket.ttf",
+          "textAlignment": "center",
+          "characterSize": 15,
+          "color": {
+            "b": 180,
+            "g": 255,
+            "r": 0
+          },
+          "content": {
+            "bold": true,
+            "isOutlineEnabled": true,
+            "isShadowEnabled": true,
+            "italic": true,
+            "outlineColor": "0;0;0",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "You can jump higher by pressing jump twice",
+            "font": "a7525df1cce09eecd517873e6ebe7294b7789f189d624770913570e40b1c6c92_Kenney Rocket.ttf",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 15,
+            "lineHeight": 0,
+            "color": "0;255;180"
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -2391,6 +2509,9 @@
           },
           {
             "objectName": "Text_Restarter"
+          },
+          {
+            "objectName": "Demo"
           },
           {
             "objectName": "Scores"
@@ -2543,6 +2664,14 @@
               },
               "parameters": [
                 "Scores"
+              ]
+            },
+            {
+              "type": {
+                "value": "Hide"
+              },
+              "parameters": [
+                "Demo"
               ]
             }
           ]
@@ -3544,6 +3673,15 @@
                     "Scores",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "Show"
+                  },
+                  "parameters": [
+                    "Demo",
+                    ""
+                  ]
                 }
               ]
             },
@@ -4126,7 +4264,7 @@
                 "",
                 "\"ChunkTimer\"",
                 ">",
-                "2"
+                "Variable(SpawnInterval)"
               ]
             }
           ],
@@ -4147,7 +4285,7 @@
               "parameters": [
                 "SelectedPattern",
                 "=",
-                "RandomInRange(0, 2)"
+                "RandomInRange(0, 4)"
               ]
             },
             {
@@ -4238,6 +4376,18 @@
           ]
         },
         {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Prevent Collisions"
+        },
+        {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -4289,6 +4439,120 @@
               "parameters": [
                 "ScoreSensor",
                 ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Crystal",
+                "Crystal",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Crystal",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Increase Spawn Rate"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "GameStarted",
+                "=",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "Laser",
+                "\"Difficulty\"",
+                ">",
+                "5"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "SpawnInterval",
+                "-",
+                "0.1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"Difficulty\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "SpawnInterval",
+                "<",
+                "0.8"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "SpawnInterval",
+                "=",
+                "0.8"
               ]
             }
           ]
